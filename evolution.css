@@ -1,0 +1,83 @@
+table, th, td{
+    padding: 10px;
+    margin: 10px;
+}
+
+table{
+    background: lightslategrey;
+
+}
+
+th{
+    background: lightsteelblue;
+}
+
+td{
+    background: silver;
+}
+
+body {
+    font-family: 'Indie Flower';
+    /* margin: 0 auto; */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+.img {
+    width: 90px;
+    height: 90px;
+}
+
+.grid_col {
+    background-color: grey;
+    border: solid 2px rgb(32, 26, 26);
+    border-radius: 3%;
+}
+
+.sexe, .age, .taille {
+    margin: 2%;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 536px) {
+    .sexe, .age, .taille {
+        display: block; 
+        margin-left: 25%;
+    }
+
+    .responsive_row {
+        display: block;
+    }
+}
+
+.stat {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+}
+
+#stats {
+    display: block;
+}
+
+#statistiques {
+    margin-left: auto;
+    margin-right: auto;
+}
